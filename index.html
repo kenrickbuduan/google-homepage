@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,21 +17,32 @@
     <title>Google</title>
   </head>
   <body>
-    <div class="upper-menu">
-      <a href="https://www.gmail.com">Gmail</a>
-      <a href="https://www.google.com/imghp">Google Images</a>
-      <span class="material-icons-outlined"> account_circle </span>
-    </div>
-    <div>
+    <header class="upper-menu">
+      <div class="upper-menu-apps">
+        <span class="material-icons-outlined"> apps </span>
+        <a href="https://www.gmail.com">Gmail</a>
+        <a href="https://www.google.com/imghp">Images</a>
+      </div>
+      <div class="upper-menu-account">
+        <a href="https://www.gmail.com">My Google Account</a>
+        <span class="material-icons-outlined"> account_circle </span>
+      </div>
+    </header>
+    <div class="google-logo">
       <img
         src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        id="google-logo"
       />
     </div>
-    <div>
+    <div class="search-form">
       <form>
-        <input type="text" />
-        <input type="submit" value="Google Search" />
-        <button>I'm Feeling Lucky</button>
+        <span class="search-input-area">
+          <input type="text" name="search-field" id="search-input" />
+        </span>
+        <div>
+          <input type="submit" value="Google Search" />
+          <button>I'm Feeling Lucky</button>
+        </div>
       </form>
     </div>
     <footer>
