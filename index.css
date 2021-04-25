@@ -5,6 +5,7 @@ body {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -31,6 +32,19 @@ a {
   align-items: center;
 }
 
+.search-area {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-content: center;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
 .google-logo {
   padding: 20px 0;
   text-align: center;
@@ -46,17 +60,29 @@ a {
   border: 1px solid #dadce0;
   border-radius: 24px;
   display: inline-block;
-  height: 2em;
+  height: 2.5em;
   margin: 10px 0;
-  width: 30%;
+  width: 40%;
 }
 
-#search-input{
+#search-input {
   border: none;
+  box-sizing: border-box;
   display: inline-block;
   font-family: inherit;
-  height: 2em;
+  font-size: 1em;
+  height: 2.5em;
+  overflow: hidden;
   width: 90%;
+}
+
+input[type="submit"] {
+  background-color: #f2f2f2;
+  border: 1px solid #f8f9fa;
+  font-family: inherit;
+  font-size: 1em;
+  margin: 0 10px;
+  padding: 10px 10px;
 }
 
 footer {
@@ -81,8 +107,9 @@ footer .country-loc-menu {
   text-align: center;
 }
 
-footer .footer-left-menu p,
-footer .footer-right-menu p {
+footer .country-loc-menu a,
+footer .disclaimer-menu a {
+  color: rgba(0, 0, 0, 0.54);
   display: inline-block;
   font-weight: 300;
   margin: 10px 1.5em;
