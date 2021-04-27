@@ -15,7 +15,7 @@
 ## Realizations
 * Oh, this README.md is created using **GNU Nano**. I never though that creating a Markdown file from the terminal would be this cool!
 * Using CSS Flex is an elegant solution for aligning items. It's much simpler to grasp than CSS Grid.
-    * However, I am also confused as to what should I use: CSS Flex or CSS Grid?
+    * However, I am also confused as to what I should use: CSS Flex or CSS Grid?
 * To specify Material Icons in your webpage, you need to insert it just as how you would insert a font from Google Font.
 * `box-sizing: border-box` is more suitable for styling text inputs.
-* `z-index` property allows you to properly display an element when two of these overlaps.
+* `z-index` property allows you to properly display an element when two of these overlap.
